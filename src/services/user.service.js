@@ -4,7 +4,7 @@ import {Redirect} from "react-router-dom";
 import React from "react";
 import AuthService from "./auth.service";
 
-const API_URL = 'https://dev.laravel08.truckindigital.com/api/v1';
+const API_URL = 'https://staging.truckindigital.com/api/v1';
 const user = AuthService.getCurrentUser();
 
 class UserService {
