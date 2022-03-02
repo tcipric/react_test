@@ -41,7 +41,7 @@ export default class BoardModerator extends Component {
 
   render() {
     const user = AuthService.getCurrentUser();
-    this.state.showAdminBoard = user && user.roles ? user.roles.includes("Admin User") : false;
+    this.state.showAdminBoard = user && user.roles_list ? user.roles_list.includes("Admin User") : false;
     if (!user) {
       return <Redirect to={'/login'} />
     }
