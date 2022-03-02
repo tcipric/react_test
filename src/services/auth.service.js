@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://truckindigital.docker/api";
+const API_URL = "https://dev.laravel08.truckindigital.com/api";
 
 class AuthService {
   login(email, password) {
